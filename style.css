@@ -1,0 +1,305 @@
+@import url('https//fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none ;
+    list-style: none;
+}
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #73D9E7;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float:left ;
+}
+
+.menu .header ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .header ul li a:hover {
+    color: #73D9E7;
+}
+
+#menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-txt {
+    font: size 55px; 
+    line-height: 1.4;
+    color: #101010;
+    margin-bottom: 35px;
+}
+
+.header-txt span {
+    background-color: #73D9E7;
+    color: #FFFFFF;
+    padding: 0 10px;
+} 
+
+p {
+    font-size: 17;
+    color: #303030;
+    margin-bottom: 35px;
+}
+
+.phones img {
+    width: 150px;
+    margin-right: 15px;
+}
+
+.header-img {
+    flex-basis: 50%;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url(images/txt-img.jpg);
+ background-position: center center;   
+ background-repeat: no-repeat;
+ background-size:conver;
+ min-height: 60vh;
+}
+
+.header-img img {
+    margin-top: 85px;
+
+}
+
+.gallery-content {
+    display: grid;
+    grid-template-columns: 290px 290px 290px 290px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 20px;
+}
+
+.gallery-content img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.item-a {
+    grid-row : 1 / 3 
+
+}
+.item-b{
+    grid-column: 3 / 5;
+}
+.item-c {
+    grid-column: 2 / 4;
+}
+.item-d {
+    grid-column: 3 / 5;
+}
+h2 {
+    font-size: 30px;
+    color: #101010;
+    margin-bottom: 15px;
+}
+
+.cards{
+    padding: 0 0 100px 0;
+    text-align: center;
+
+}
+.cards-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.cards-1 {
+    flex-basis: calc(33% - 30px);
+    box-shadow: 0 0 20px rgb(0,0,0,0.2);
+    border-radius: 15px;
+    padding: 40px ;
+}
+card-1 img {
+    width: 45px;
+    margin-bottom: 10px;
+}
+.cards-1 h3{
+    font-size: 18px;
+    color: #101010;
+    margin-bottom: 10px;
+}
+
+.cards-1 p {
+    margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link h3 {
+    font-size: 17px;
+    color: #101010;
+    margin-bottom: 10px;
+
+}
+.link a {
+    font-size: 17px;
+    color:#303030;
+    margin-bottom: 10px;
+    display: block;
+}
+.link a:hover{
+    color: #73D9E7;
+}
+.footer-img img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+@media(max-width:991px) {
+
+    .menu 
+    {padding: 20px;
+
+    }
+
+    .menu label{
+        display: initial;
+    }
+    
+    .menu .navbar {
+       position: absolute;
+       top: 100%;
+       left: 0;
+       right: 0;
+       background-color: #73D9E7;
+       display: none; 
+    }
+
+.menu .navbar ul li {
+width: 100%;
+}
+
+.menu .navbar ul li a:hover {
+    color:#101010;
+
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+}
+.header {
+    min-height: 0vh;
+}
+
+.header-content {
+    flex-direction: column;
+    padding: 80px 30px 30px 30px;
+}
+
+.header-txt{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.header-txt h1 {
+    margin-bottom: 15px;
+}
+
+.header-img {
+    min-height: 100px;
+}
+
+.header-img img {
+    margin-top: 25px;
+}
+
+.gallery {
+    padding: 30px;
+}
+
+.gallery-content {
+    display: flex;
+flex-direction: column;
+}
+
+.cards {
+    padding: 30px;
+}
+
+.cards-1 {
+    flex-direction: column;
+}
+
+.cards-1 {
+    margin-bottom: 25px ;
+
+}
+
+.footer {
+    padding: 30px;
+}
+
+.footer-content {
+    flex-direction: column;
+
+}
+
+.link a {
+    margin-bottom: 15px;
+}
+
+.footer-img img{
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+}
